@@ -14,11 +14,12 @@ export class Test extends Component {
         <Jumbotron fluid style={{backgroundImage: 'url("https://cdn.vox-cdn.com/thumbor/BSHSENmkOeTcuCzWso2TMXwp7ok=/0x0:2040x1360/1200x800/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/66560568/acastro_181016_1777_music_0001.0.jpg")'}}>
         <h1 style={{ color: 'white' }}>Music Recommender</h1>
         </Jumbotron>
+        Hello
         <Container fluid="lg">
-        <Navigate/>
+        <Navigate />
         <Form.Row>
               <Col>
-                <Form.Control type="password" placeholder="password" required onChange={e => this.setState({psw:e.target.value})}/>
+                <Form.Control type="password" placeholder="password" required/>
               </Col>
           </Form.Row>
       </Container>

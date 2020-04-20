@@ -13,6 +13,8 @@ export default function Navigate(props){
     <Container fluid="lg">
     <Navbar bg="dark" variant="dark" expand="md">
         <Navbar.Brand href="/home">Music Recommender</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <Link to="/home">Home</Link><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
           <Link to="/playlist">Playlist</Link><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
@@ -22,6 +24,7 @@ export default function Navigate(props){
         <Form inline>
         <Nav.Link href="/">Sign Out</Nav.Link>
         </Form>
+        </Navbar.Collapse>
     </Navbar>
     <Jumbotron fluid style={{backgroundImage: 'url("https://cdn.vox-cdn.com/thumbor/BSHSENmkOeTcuCzWso2TMXwp7ok=/0x0:2040x1360/1200x800/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/66560568/acastro_181016_1777_music_0001.0.jpg")'}}>
       <h1 style={{ color: 'white' }}>Music Recommender</h1>
